@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Cabecera: fila de botones arriba · título completo abajo (NO se recorta ni lo tapan) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="18dp">
+
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btn_gift"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/bg_circle_pink_soft"
+                    android:src="@drawable/ic_gift"
+                    app:tint="#C68A2E"
+                    xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/text_primary"
+                    xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+                <ImageButton
+                    android:id="@+id/btn_more"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_more"
+                    app:tint="@color/text_primary"
+                    xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+
+            <!-- Título completo en su propia fila, debajo de los botones -->
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/all_diaries"
+                android:textColor="@color/text_primary"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Chips de etiquetas -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="14dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/chips_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_grid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="14dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <!-- Barra de SELECCIÓN MÚLTIPLE (aparece al mantener pulsado un diario) -->
+            <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sel_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="14dp"
+                android:background="@drawable/bg_card_soft"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/ib_sel_close"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/tv_sel_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="0 seleccionados"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_sel_delete"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_trash"
+                    app:tint="#E8494E" />
+
+                <ImageButton
+                    android:id="@+id/ib_sel_move"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_pages"
+                    app:tint="@color/text_chip" />
+
+                <ImageButton
+                    android:id="@+id/ib_sel_share"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_share"
+                    app:tint="@color/text_chip" />
+
+                <ImageButton
+                    android:id="@+id/ib_sel_info"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_info"
+                    app:tint="@color/text_chip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Banners -->
+        <HorizontalScrollView
+            android:id="@+id/banners_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="14dp"
+            android:paddingHorizontal="16dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/banner_discover"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_banner_cream"
+                    android:padding="12dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="🎨 Descubrir"
+                            android:textColor="#7A5A2E"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/banner1_close"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="✕"
+                            android:textColor="#7A5A2E" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌸 🌵 🐻 ✨\nPlantillas y stickers"
+                        android:textColor="#7A5A2E"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banner1"
+                        android:textColor="#7A5A2E"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/banner_tutorial"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_banner_blue"
+                    android:padding="12dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="📘 Tutoriales KNotes"
+                            android:textColor="#33628F"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/banner2_close"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="✕"
+                            android:textColor="#33628F" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📝 📚 💡\nAprende journaling paso a paso"
+                        android:textColor="#33628F"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banner2"
+                        android:textColor="#33628F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/accent_pink_soft"
+            app:elevation="6dp"
+            app:tint="@color/accent_pink_deep"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

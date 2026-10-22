@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- libreta (variante HOMBRE: lomo azul sobre fondo noche) -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M38,30 h30 a4,4 0 0 1 4,4 v40 a4,4 0 0 1 -4,4 h-30 a4,4 0 0 1 -4,-4 v-40 a4,4 0 0 1 4,-4 z" />
+    <path android:fillColor="#4A90D9"
+        android:pathData="M34,30 h6 v48 h-6 a4,4 0 0 1 -4,-4 v-40 a4,4 0 0 1 4,-4 z" />
+    <!-- espiral izq -->
+    <path android:fillColor="#3A4450"
+        android:pathData="M34,38a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0 M34,46a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0 M34,54a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0 M34,62a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0 M34,70a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0" />
+    <!-- marco decorativo -->
+    <path android:strokeColor="#7FAEE0" android:strokeWidth="2.6"
+        android:pathData="M50,44h14v20h-14z" android:fillColor="#00000000" />
+    <!-- pluma -->
+    <path android:strokeColor="#22262E" android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M51,60 L60,51 L63.5,47.5" android:fillColor="#00000000" />
+</vector>

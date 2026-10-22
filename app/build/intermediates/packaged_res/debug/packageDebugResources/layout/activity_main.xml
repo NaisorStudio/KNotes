@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/rail"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_rail">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="14dp">
+
+                <ImageButton
+                    android:id="@+id/rail_logo"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_circle_pink"
+                    android:src="@drawable/ic_nav_notes"
+                    app:tint="@color/accent_yellow"
+                    android:contentDescription="KNotes" />
+
+                <Space android:layout_width="match_parent" android:layout_height="26dp" />
+
+                <ImageButton
+                    android:id="@+id/rail_notes"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_notebook"
+                    app:tint="@color/text_dim" />
+
+                <Space android:layout_width="match_parent" android:layout_height="20dp" />
+
+                <ImageButton
+                    android:id="@+id/rail_compass"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_compass"
+                    app:tint="@color/text_dim" />
+
+                <Space android:layout_width="match_parent" android:layout_height="20dp" />
+
+                <ImageButton
+                    android:id="@+id/rail_store"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_store"
+                    app:tint="@color/text_dim" />
+
+                <Space android:layout_width="match_parent" android:layout_height="30dp" />
+                <View
+                    android:layout_width="34dp"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_dark" />
+                <Space android:layout_width="match_parent" android:layout_height="30dp" />
+
+                <ImageButton
+                    android:id="@+id/rail_help"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_help"
+                    app:tint="@color/text_dim" />
+
+                <Space android:layout_width="match_parent" android:layout_height="20dp" />
+
+                <ImageButton
+                    android:id="@+id/rail_gear"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_nav_gear"
+                    app:tint="@color/text_dim"
+                    android:contentDescription="Ajustes" />
+
+                <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/rail_trash"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_trash"
+                    app:tint="@color/text_dim" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/content_host"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/bg_nav"
+        app:itemIconTint="@color/text_dim"
+        app:itemActiveIndicatorStyle="@style/NavPill"
+        app:itemTextAppearanceActive="@style/NavItem"
+        app:itemTextAppearanceInactive="@style/NavItem"
+        app:itemIconSize="24dp"
+        app:labelVisibilityMode="labeled" />
+</LinearLayout>

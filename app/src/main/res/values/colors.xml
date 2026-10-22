@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modo CLARO (por defecto). El modo OSCURO vive en values-night/colors.xml -->
+    <color name="bg_app">#F6F1E9</color>
+    <color name="bg_rail">#FBF7EF</color>
+    <color name="bg_nav">#FBF7EF</color>
+    <color name="bg_card_dark">#FFFFFF</color>
+    <color name="bg_menu_dark">#FFFFFF</color>
+    <color name="divider_dark">#E3DDD2</color>
+    <color name="text_primary">#2A2630</color>
+    <color name="text_dim">#8A8378</color>
+    <color name="text_chip">#3A3540</color>
+
+    <!-- Acentos (rosa mujer / azul hombre) -->
+    <color name="accent_pink">#F5AEC6</color>
+    <color name="accent_pink_deep">#EE9BB5</color>
+    <color name="accent_pink_soft">#F8D3E0</color>
+    <color name="accent_yellow">#F2CE5E</color>
+    <color name="accent_blue">#A8C8EF</color>
+    <color name="accent_blue_deep">#4A90D9</color>
+    <color name="accent_blue_soft">#D6E7F8</color>
+
+    <!-- Editor (siempre papel) -->
+    <color name="editor_bg">#EAE4D6</color>
+    <color name="paper">#FBF7ED</color>
+    <color name="paper_line">#C9C3B4</color>
+    <color name="paper_margin">#E2C9C2</color>
+
+    <!-- Banners -->
+    <color name="banner_cream">#FBEEDA</color>
+    <color name="banner_blue">#E2ECF7</color>
+</resources>

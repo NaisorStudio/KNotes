@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="14dp">
+
+    <FrameLayout
+        android:layout_width="278dp"
+        android:layout_height="278dp">
+
+        <com.knotes.app.ui.ProceduralCardView
+            android:id="@+id/mcard_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/mcard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_pill_title"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="7dp"
+            android:textColor="#5B4A70"
+            android:textSize="15sp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/mcard_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_badge_new"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="New"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mcard_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_pill_use"
+            android:minHeight="0dp"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="8dp"
+            android:text="@string/usarlo"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mcard_subtitle"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_dim"
+        android:textSize="11sp"
+        android:paddingVertical="5dp" />
+</LinearLayout>

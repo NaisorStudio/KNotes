@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KNotes" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg_app</item>
+        <item name="android:statusBarColor">@color/bg_app</item>
+        <item name="android:navigationBarColor">@color/bg_nav</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorEdgeEffect">@color/accent_pink</item>
+    </style>
+
+    <style name="Theme.KNotes.Editor" parent="Theme.KNotes">
+        <item name="android:windowBackground">@color/editor_bg</item>
+        <item name="android:statusBarColor">@color/editor_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Diálogos SIEMPRE claros: texto FIJO oscuro (antes en modo oscuro salía blanco incómodo) -->
+    <style name="Theme.KNotes.LightDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/accent_pink_deep</item>
+        <item name="colorAccent">@color/accent_pink_deep</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_cream</item>
+        <item name="android:textColorPrimary">#2B2630</item>
+        <item name="android:textColorSecondary">#5F5A52</item>
+        <item name="textColorAlertDialogListItem">#2B2630</item>
+    </style>
+</resources>

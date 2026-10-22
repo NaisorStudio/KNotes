@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_notes" android:icon="@drawable/ic_nav_notes" android:title="Diarios" />
+    <item android:id="@+id/nav_calendar" android:icon="@drawable/ic_nav_calendar" android:title="Calendario" />
+    <item android:id="@+id/nav_discover" android:icon="@drawable/ic_nav_discover" android:title="Descubrir" />
+    <item android:id="@+id/nav_market" android:icon="@drawable/ic_store" android:title="Mercado" />
+    <item android:id="@+id/nav_settings" android:icon="@drawable/ic_nav_gear" android:title="Ajustes" />
+</menu>

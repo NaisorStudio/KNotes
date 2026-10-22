@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- solo para el buscador de actualizaciones (GIST/APK); la app funciona sin internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".KNotesApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_w"
+        android:roundIcon="@mipmap/ic_launcher_w"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KNotes">
+
+        <!-- Ícono del lanzador: mujer (cuaderno rosa) — Managed por Gender.syncLauncher -->
+        <activity-alias
+            android:name=".WomanLauncher"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_w"
+            android:roundIcon="@mipmap/ic_launcher_w"
+            android:targetActivity=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Ícono del lanzador: hombre (cuaderno negro con azul) -->
+        <activity-alias
+            android:name=".ManLauncher"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_m"
+            android:roundIcon="@mipmap/ic_launcher_m"
+            android:targetActivity=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".EditorActivity"
+            android:exported="false"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Compartir diarios (pdf/png/jpg/txt) desde la caché de la app -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

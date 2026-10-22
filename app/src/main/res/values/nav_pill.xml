@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavPill" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/bg_card_dark</item>
+    </style>
+
+    <style name="NavItem" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

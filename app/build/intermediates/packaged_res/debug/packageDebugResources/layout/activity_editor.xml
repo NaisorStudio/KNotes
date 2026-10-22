@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/editor_bg">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_pill_white"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_chip"
+            android:contentDescription="Volver" />
+
+        <!-- Paleta de herramientas: sin contenedor redondeado para que al deslizar no se vean
+             círculos cortados sobresaliendo del borde; cada botón es su propio círculo -->
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:fillViewport="false"
+            android:background="@null"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/tool_row"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="2dp" />
+        </HorizontalScrollView>
+
+        <!-- Acciones esenciales (el demais va al menú ⋮) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_pill_white"
+            android:paddingHorizontal="4dp">
+
+            <ImageButton
+                android:id="@+id/btn_undo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/ic_undo"
+                app:tint="@color/text_dim"
+                android:contentDescription="Deshacer" />
+
+            <ImageButton
+                android:id="@+id/btn_redo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/ic_redo"
+                app:tint="@color/text_dim"
+                android:contentDescription="Rehacer" />
+
+            <ImageButton
+                android:id="@+id/btn_save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_pill_save"
+                android:src="@drawable/ic_save"
+                app:tint="@color/accent_pink_deep"
+                android:padding="8dp"
+                android:contentDescription="Guardar" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/ic_more"
+                app:tint="@color/text_chip"
+                android:contentDescription="Más opciones" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Lienzo -->
+    <com.knotes.app.canvas.CanvasPageView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <!-- Botón flotante (lápiz/última herramienta) -->
+    <ImageButton
+        android:id="@+id/btn_float_pen"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/bg_circle_pink"
+        android:src="@drawable/ic_pen"
+        app:tint="@color/text_chip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        android:contentDescription="Lápiz rápido" />
+
+    <!-- Barra de escritura INLINE (T del diario): escribe y sigue las líneas -->
+    <LinearLayout
+        android:id="@+id/text_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_pill_white"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/text_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escribe aquí… seguirá las líneas del papel"
+            android:textColor="#2B2B2B"
+            android:textColorHint="#9A9288"
+            android:textSize="15sp"
+            android:maxLines="6"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:background="@drawable/bg_cell_white"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/text_cancel"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#8A8378" />
+
+        <ImageButton
+            android:id="@+id/text_done"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/bg_circle_white"
+            android:src="@drawable/ic_save"
+            app:tint="#4CAF50" />
+    </LinearLayout>
+
+    <!-- Indicador de página -->
+    <LinearLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_pill_white"
+        android:elevation="6dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_prev_page"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="@color/accent_pink_deep"
+            android:contentDescription="Página anterior" />
+
+        <TextView
+            android:id="@+id/page_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/1"
+            android:textColor="@color/text_chip"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="4dp" />
+
+        <ImageButton
+            android:id="@+id/btn_next_page"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:src="@android:drawable/ic_media_next"
+            app:tint="@color/accent_pink_deep"
+            android:contentDescription="Página siguiente" />
+    </LinearLayout>
+
+    <!-- Popup de selección -->
+    <LinearLayout
+        android:id="@+id/selection_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_pill_white"
+        android:elevation="8dp"
+        android:visibility="gone"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="18dp">
+
+        <ImageButton
+            android:id="@+id/sel_rot_l"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_rot_ccw"
+            app:tint="#B26AA6"
+            android:contentDescription="Girar a la izquierda" />
+
+        <ImageButton
+            android:id="@+id/sel_rot_r"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_rot_cw"
+            app:tint="#4A90D9"
+            android:contentDescription="Girar a la derecha" />
+
+        <ImageButton
+            android:id="@+id/sel_shrink"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_minus"
+            app:tint="#6E5D66"
+            android:contentDescription="Achicar" />
+
+        <ImageButton
+            android:id="@+id/sel_grow"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_add"
+            app:tint="#4A90D9"
+            android:contentDescription="Agrandar" />
+
+        <ImageButton
+            android:id="@+id/sel_delete"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_trash"
+            app:tint="#EE5F8B"
+            android:contentDescription="Eliminar selección" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="7dp"
+            android:text="Mueve · agranda · gira"
+            android:textColor="#9A9288"
+            android:textSize="11sp" />
+
+        <ImageButton
+            android:id="@+id/sel_close"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:src="@drawable/ic_close"
+            app:tint="@color/text_chip"
+            android:contentDescription="Cerrar selección" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

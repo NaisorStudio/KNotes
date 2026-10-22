@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp">
+
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/feed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/text_primary"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btn_gift"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_circle_pink_soft"
+            android:src="@drawable/ic_gift"
+            app:tint="#C68A2E" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_search"
+            app:tint="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/btn_history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/ic_undo"
+            app:tint="@color/text_primary" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/feed_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_app"
+        app:tabIndicatorColor="@color/accent_pink"
+        app:tabSelectedTextColor="@color/text_primary"
+        app:tabTextColor="@color/text_dim"
+        app:tabMode="scrollable"
+        app:tabGravity="start"
+        app:tabTextAppearance="@style/FeedTab" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feed_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+</LinearLayout>

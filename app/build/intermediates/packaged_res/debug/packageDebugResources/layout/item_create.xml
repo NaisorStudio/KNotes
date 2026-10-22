@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/bg_notebook_card">
+
+        <com.knotes.app.ui.NotebookCoverView
+            android:id="@+id/cover"
+            android:layout_width="128dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_white"
+            android:gravity="center"
+            android:text="＋"
+            android:textColor="@color/text_chip"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="@string/create_diary"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp" />
+</LinearLayout>

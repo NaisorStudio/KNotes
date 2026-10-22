@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KNotes</string>
+    <string name="all_diaries">Todos los diarios</string>
+    <string name="create_diary">Nuevo Diario</string>
+    <string name="discover">Descubrir</string>
+    <string name="market">Mercado</string>
+    <string name="ver_todo">ver todo</string>
+    <string name="usarlo">Usarlo</string>
+    <string name="save">guardar</string>
+    <string name="search_hint">Buscar diarios o etiquetas</string>
+    <string name="banner1">¡Explora ahora para inspirarte!</string>
+    <string name="banner2">Mejora tu journaling con nuestros tutoriales</string>
+</resources>

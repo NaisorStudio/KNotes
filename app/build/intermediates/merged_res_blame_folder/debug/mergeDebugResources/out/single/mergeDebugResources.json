@@ -1,0 +1,410 @@
+[
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_link.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_link.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_nav_calendar.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_nav_calendar.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_activity_editor.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/activity_editor.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_fragment_feed.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/fragment_feed.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_back.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxxhdpi_ic_launcher_m.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxxhdpi/ic_launcher_m.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_item_market_card.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/item_market_card.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_launcher_fg.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_launcher_fg.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_help.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_help.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_heart_fill.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_heart_fill.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_rot_cw.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_rot_cw.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_pages.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_pages.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable-night_bg_chip_normal.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable-night/bg_chip_normal.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_item_discover_card.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/item_discover_card.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_circle_white.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_circle_white.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-hdpi_ic_launcher_w.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-hdpi/ic_launcher_w.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_banner_cream.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_banner_cream.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_nav_notes.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_nav_notes.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_rot_ccw.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_rot_ccw.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_more.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_more.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-mdpi_ic_launcher_m.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-mdpi/ic_launcher_m.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_chevron_down.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_chevron_down.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_image.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_image.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_redo.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_redo.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_dialog_cream.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_dialog_cream.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_pill_use.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_pill_use.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_search.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_pill_title.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_pill_title.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_minus.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_minus.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_circle_blue.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_circle_blue.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_blue.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_blue.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_close.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_cursor.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_cursor.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_circle_pink_soft.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_circle_pink_soft.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxxhdpi_ic_launcher_w.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxxhdpi/ic_launcher_w.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_note_add.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_note_add.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_notebook.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_notebook.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_banner_blue.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_banner_blue.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxhdpi_ic_launcher_m.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxhdpi/ic_launcher_m.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_info.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_card_soft.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_card_soft.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_nav_discover.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_nav_discover.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-anydpi-v26_ic_launcher_w.xml.flat",
+        "source": "com.knotes.app-main-42:/mipmap-anydpi-v26/ic_launcher_w.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_pill_save.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_pill_save.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_lines.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_lines.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_menu_dark.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_menu_dark.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_light.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_light.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_text.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_text.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_gift.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_gift.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_fragment_settings.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_launcher_bg.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_launcher_bg.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_add.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_circle_blue_soft.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_circle_blue_soft.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_launcher_bg_m.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_launcher_bg_m.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xhdpi_ic_launcher_w.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xhdpi/ic_launcher_w.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_save.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_save.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_launcher_fg_m.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_launcher_fg_m.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_undo.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_undo.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_item_notebook.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/item_notebook.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_notebook_card.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_notebook_card.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_item_trash.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/item_trash.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-mdpi_ic_launcher_w.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-mdpi/ic_launcher_w.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_eraser.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_eraser.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_lasso.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_lasso.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_nav_gear.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_nav_gear.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_pink.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_pink.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_fragment_home.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_sword.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_sword.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_circle_pink.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_circle_pink.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_pill_white.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_pill_white.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_pen.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_pen.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_badge_new.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_badge_new.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-hdpi_ic_launcher_m.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-hdpi/ic_launcher_m.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_cell_white.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_cell_white.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_view_section.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/view_section.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_store.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_store.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_compass.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_compass.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/menu_bottom_nav.xml.flat",
+        "source": "com.knotes.app-main-42:/menu/bottom_nav.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_fragment_trash.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/fragment_trash.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_heart.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_heart.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xhdpi_ic_launcher_m.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xhdpi/ic_launcher_m.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_sheet_dark.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_sheet_dark.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_sticker.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_sticker.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/xml_file_paths.xml.flat",
+        "source": "com.knotes.app-main-42:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable-night_bg_card_soft.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable-night/bg_card_soft.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_share.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable-night_bg_notebook_card.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable-night/bg_notebook_card.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_trash.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_trash.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_item_create.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/item_create.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/layout_activity_main.xml.flat",
+        "source": "com.knotes.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_normal.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_normal.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-xxhdpi_ic_launcher_w.png.flat",
+        "source": "com.knotes.app-main-42:/mipmap-xxhdpi/ic_launcher_w.png"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_bg_chip_selected_blue.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/bg_chip_selected_blue.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-anydpi-v26_ic_launcher_m.xml.flat",
+        "source": "com.knotes.app-main-42:/mipmap-anydpi-v26/ic_launcher_m.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.knotes.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.knotes.app-debug-40:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.knotes.app-main-42:/drawable/ic_chevron_right.xml"
+    }
+]

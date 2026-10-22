@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#A8C8EF</color>
+    <color name="accent_blue_deep">#4A90D9</color>
+    <color name="accent_blue_soft">#D6E7F8</color>
+    <color name="accent_pink">#F5AEC6</color>
+    <color name="accent_pink_deep">#EE9BB5</color>
+    <color name="accent_pink_soft">#F8D3E0</color>
+    <color name="accent_yellow">#F2CE5E</color>
+    <color name="banner_blue">#E2ECF7</color>
+    <color name="banner_cream">#FBEEDA</color>
+    <color name="bg_app">#F6F1E9</color>
+    <color name="bg_card_dark">#FFFFFF</color>
+    <color name="bg_menu_dark">#FFFFFF</color>
+    <color name="bg_nav">#FBF7EF</color>
+    <color name="bg_rail">#FBF7EF</color>
+    <color name="divider_dark">#E3DDD2</color>
+    <color name="editor_bg">#EAE4D6</color>
+    <color name="paper">#FBF7ED</color>
+    <color name="paper_line">#C9C3B4</color>
+    <color name="paper_margin">#E2C9C2</color>
+    <color name="text_chip">#3A3540</color>
+    <color name="text_dim">#8A8378</color>
+    <color name="text_primary">#2A2630</color>
+    <string name="all_diaries">Todos los diarios</string>
+    <string name="app_name">KNotes</string>
+    <string name="banner1">¡Explora ahora para inspirarte!</string>
+    <string name="banner2">Mejora tu journaling con nuestros tutoriales</string>
+    <string name="create_diary">Nuevo Diario</string>
+    <string name="discover">Descubrir</string>
+    <string name="market">Mercado</string>
+    <string name="save">guardar</string>
+    <string name="search_hint">Buscar diarios o etiquetas</string>
+    <string name="usarlo">Usarlo</string>
+    <string name="ver_todo">ver todo</string>
+    <style name="FeedTab" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="NavItem" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="NavPill" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/bg_card_dark</item>
+    </style>
+    <style name="Theme.KNotes" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg_app</item>
+        <item name="android:statusBarColor">@color/bg_app</item>
+        <item name="android:navigationBarColor">@color/bg_nav</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorEdgeEffect">@color/accent_pink</item>
+    </style>
+    <style name="Theme.KNotes.Editor" parent="Theme.KNotes">
+        <item name="android:windowBackground">@color/editor_bg</item>
+        <item name="android:statusBarColor">@color/editor_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.KNotes.LightDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/accent_pink_deep</item>
+        <item name="colorAccent">@color/accent_pink_deep</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_cream</item>
+        <item name="android:textColorPrimary">#2B2630</item>
+        <item name="android:textColorSecondary">#5F5A52</item>
+        <item name="textColorAlertDialogListItem">#2B2630</item>
+    </style>
+</resources>
